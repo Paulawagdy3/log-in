@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="body">
+        <div class="box-sinup" id="zDIV">
+            <div class="title">
+                <h1>sing up</h1>
+            </div>
+            <form>
+                <div class="user-box">
+                    <input type="text" name="" required="">
+                    <label>Username</label>
+                </div>
+                <div class="user-box">
+                    <input type="text" name="" required="">
+                    <label>Email</label>
+                </div>
+                <div class="user-box">
+                    <input type="password" name="" required="">
+                    <label>Password</label>
+                </div>
+                <a href="#">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span> Submit
+                </a>
+            </form>
+        </div>
+        <div class="box-login" id="yDIV">
+            <div class="title">
+                <h1>Log in</h1>
+            </div>
+            <form>
+                <div class="user-box">
+                    <input type="text" name="" required="">
+                    <label>Username</label>
+                </div>
+                <div class="user-box">
+                    <input type="password" name="" required="">
+                    <label>Password</label>
+                </div>
+                <a href="#">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span> Submit
+                </a>
+            </form>
+        </div>
+        <div class="top" id="xDIV">
+            <a onclick="myFunction()">Log in</a>
+        </div>
+        <div class="top1" id="cDIV">
+            <a onclick="myFunction()">sign up</a>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script>
+    function myFunction() {
+        var x = document.getElementById("xDIV");
+        var y = document.getElementById("yDIV");
+        var c = document.getElementById("cDIV");
+        var z = document.getElementById("zDIV");
+        if (x.style.display === "block", z.style.display === "block") {
+            x.style.display = "none";
+            z.style.display = "none";
+        } else {
+            x.style.display = "block";
+            z.style.display = "block";
+        }
+        if (c.style.display === "none", y.style.display === "none") {
+            c.style.display = "block";
+            y.style.display = "block";
+        } else {
+            c.style.display = "none";
+            y.style.display = "none";
+        }
+    }
+</script>
